@@ -17,6 +17,7 @@
     <script src="JS/slick.js" defer></script>
     <script src="JS/script.js" defer></script>
     <script src="JS/produtos.js" defer></script>
+    <script src="JS/login.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +34,8 @@
                     <img src="images/img-carrinho1.png" alt="Imagem carrinho">
                 </div>
                 <div class="login">
-                    <img src="images/img-login.png" alt="Imagem login">
+                    <a href="login/login.html" class="btn_fazer_login">Login</a>
+                    <a href="login/conta-user.html"><img src="images/img-login.png" alt="Imagem login" class="conta_user"></a>
                 </div>
                 <div class="menu_burguer">
                     <svg id="menu_open" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
@@ -49,7 +51,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="btn_menu_img">
+                    <a href="login/login.html" class="btn_fazer_login">Login</a>
+                    <div class="btn_menu_img" class="conta_user">
                         <img src="images/img-login.png" alt="Imagem login">
                     </div>
                 </li>
@@ -100,22 +103,24 @@
         <!-- Produtos do site -->
     </div>
     <footer>
-        <div class="box_footer">
-            <form class="form_login">
-                <input type="email" placeholder="Gmail">
-                <input type="password" placeholder="Senha">
-                <input type="submit" value="Login">
-            </form>
-        </div>
-        <div class="box_footer">
-            <div class="link_footer">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Loja</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Conta</a></li>
-                    <li><a href="#">Suporte</a></li>
-                </ul>
+        <div class="footer_wraper">
+            <div class="box_footer">
+                <form class="form_login">
+                    <input required type="email" id="gmailId" placeholder="Gmail">
+                    <input required type="password" id="senhaId" placeholder="Senha">
+                    <input required type="submit" id="button_logar" value="Login">
+                    <p>Não tem uma conta?<a href="#">Fazer cadastro</a></p>
+                </form>
+            </div>
+            <div class="box_footer">
+                <div class="link_footer">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Loja</a></li>
+                        <li class="linkconta_login"><a href="login/login.html">Login</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <p>Direitos autorais - &copy; 2023 Sport</p>

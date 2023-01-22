@@ -32,6 +32,7 @@
         min-width: 220px;
         border-radius: 10px;
         height: 40px;
+        border: 2px solid rgb(174, 174, 174);
     } 
 
     .menu_lateral {
@@ -39,8 +40,11 @@
     }
 
     footer {
-        flex-wrap: wrap;
         padding: 50px 20px;
+    }
+
+    .footer_wraper {
+        flex-wrap: wrap;
     }
 
     .box_footer {
@@ -51,4 +55,22 @@
     .box_footer:nth-of-type(2) {
         justify-content: left;
     }
+
+    .conta_user {
+        display: none;
+    }
+
+    .btn_fazer_login {
+        border: none;
+        padding: 19px 5rem;
+        background-color: rgb(21, 21, 27);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .btn_fazer_login:hover {
+        background-color: rgb(38, 38, 49);
+    }
+
 }
