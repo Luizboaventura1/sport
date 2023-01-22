@@ -198,13 +198,13 @@ header {
 
 .container_produto_single h1 {
     font-family: 'Montserrat',sans-serif;
-    font-size: 22px;
+    font-size: 19px;
     padding: 10px 0 5px 0;
 }
 
 .container_produto_single p {
     font-family: 'Montserrat',sans-serif;
-    font-size: 19px;
+    font-size: 17px;
     padding: 5px 0 5px 0;
 }
 
@@ -263,6 +263,28 @@ header {
 
 #menu_close {
     display: none;
+}
+
+/* Container Promocao */
+
+.container_promocao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.promocao_wraper {
+    width: 100%;
+    max-width: 900px;
+}
+
+.promocao_single {
+    width: 100%;
+}
+
+.promocao_single img {
+    width: 100%;
 }
 
 /* Rodape */

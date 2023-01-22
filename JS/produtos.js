@@ -45,3 +45,12 @@ lojaOn = () => {
 }
 
 lojaOn()
+
+
+$('.promocao_wraper').slick({
+    centerMode: false,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false
+})
