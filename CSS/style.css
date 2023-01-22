@@ -103,6 +103,7 @@ header {
 .main_wraper {
     padding-left: 12%;
     padding-top: 9%;
+    padding-right: 2%;
 }
 
 .main_wraper h1 {
@@ -269,7 +270,7 @@ header {
 footer {
     padding: 50px 0;
     text-align: center;
-    background-color: #1e1e1e;
+    background-color: #070707;
 }
 
 footer h1 {

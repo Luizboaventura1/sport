@@ -24,8 +24,17 @@
         display: block;
     }
 
+    .container_pesquisa {
+        padding-right: 10px;
+    }
+
     .input_pesquisa {
         min-width: 220px;
         border-radius: 10px;
+        height: 40px;
     } 
+
+    .menu_lateral {
+        padding-left: 11%;
+    }
 }
