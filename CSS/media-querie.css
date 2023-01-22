@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px){
+    .main_wraper h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .nav_bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 30px 20px;
+        background-color: rgba(12, 12, 15, 0.917);
+    }
+
+    .login {
+        display: none;
+    }
+
+    .carrinho {
+        display: none;
+    }
+
+    .menu_burguer {
+        display: block;
+    }
+
+    .input_pesquisa {
+        min-width: 220px;
+        border-radius: 10px;
+    } 
+}

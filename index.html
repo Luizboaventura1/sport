@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Sport</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media-querie.css">
+
+    <!-- JS -->
+    <script src="JS/jquery-3.6.2.min.js" defer></script>
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <div class="container_logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="container_pesquisa">
+                <input type="search" class="input_pesquisa" placeholder="Pesquisar...">
+            </div>
+            <div class="menu_lateral">
+                <div class="carrinho">
+                    <img src="images/img-carrinho1.png" alt="Imagem carrinho">
+                </div>
+                <div class="login">
+                    <img src="images/img-login.png" alt="Imagem login">
+                </div>
+                <div class="menu_burguer">
+                    <svg id="menu_open" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                    <svg id="menu_close" class="close" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+                </div>
+            </div>
+            <ul id="menu_mobile">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Loja</a></li>
+                <li>
+                    <div class="btn_menu_img">
+                        <img src="images/img-carrinho1.png" alt="Imagem carrinho">
+                    </div>
+                </li>
+                <li>
+                    <div class="btn_menu_img">
+                        <img src="images/img-login.png" alt="Imagem login">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main class="container_main">
+            <div class="main_wraper">
+                <h1>Equipe-se com os melhores <br> produtos esportivos <br> em nossa loja!</h1>
+                <input type="submit" value="Loja" class="button_loja">
+            </div>
+        </main>
+    </header>
+    <div class="container_categorias_div">
+        <div class="categoria_sport">
+            <img src="images/img-categoria-tenis.jpg" alt="Img categoria">
+            <p>Tênis</p>
+        </div>
+        <div class="categoria_sport">
+            <img src="images/img-raquete-tenis.jpg" alt="Img categoria">
+            <p>Equipamentos</p>
+        </div>
+        <div class="categoria_sport">
+            <img src="images/img-categoria-roupa.jpg" alt="Img categoria">
+            <p>Roupas</p>
+        </div>
+        <div class="categoria_sport">
+            <img src="images/img-categoria-acessorio.jpg" alt="Img categoria">
+            <p>Acessorios</p>
+        </div>
+    </div>
+    <div class="produtos">
+        <div class="container_produto_single">
+            <img src="images/img-tenis-nike.png" alt="Img produto">
+            <h1>Tênis Nike</h1>
+            <p>R$ 299,00</p>
+            <div class="avaliacao_produto">
+                <img src="images/img-5-estrelas.png" alt="Img estrela">
+            </div>
+        </div>
+
+        <div class="container_produto_single">
+            <img src="images/img-tenis-nike.png" alt="Img produto">
+            <h1>Tênis Nike</h1>
+            <p>R$ 299,00</p>
+            <div class="avaliacao_produto">
+                <img src="images/img-5-estrelas.png" alt="Img estrela">
+            </div>
+        </div>
+
+        <div class="container_produto_single">
+            <img src="images/img-tenis-nike.png" alt="Img produto">
+            <h1>Tênis Nike</h1>
+            <p>R$ 299,00</p>
+            <div class="avaliacao_produto">
+                <img src="images/img-5-estrelas.png" alt="Img estrela">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>Loja Sport - &copy; 2023</h1>
+    </footer>
+</body>
+</html>
