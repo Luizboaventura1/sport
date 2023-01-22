@@ -37,4 +37,18 @@
     .menu_lateral {
         padding-left: 11%;
     }
+
+    footer {
+        flex-wrap: wrap;
+        padding: 50px 20px;
+    }
+
+    .box_footer {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .box_footer:nth-of-type(2) {
+        justify-content: left;
+    }
 }

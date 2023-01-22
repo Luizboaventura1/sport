@@ -291,13 +291,89 @@ header {
 
 footer {
     padding: 50px 0;
-    text-align: center;
     background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer h1 {
+footer p {
+    text-align: center;
+    color: rgb(121, 121, 121);
     font-family: 'Montserrat',sans-serif;
-    color: rgb(116, 116, 116);
+    padding: 20px 0;
+}
+
+.box_footer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_login {
+    max-width: 500px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form_login input[type=email],.form_login input[type=password] {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form_login > input[type=submit]{
+    border: 2px solid rgb(28, 85, 135);
+    color: rgb(28, 85, 135);
+    border-radius: 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    margin-top: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.form_login > input[type=submit]:hover {
+    background-color: rgb(28, 85, 135);
+    color: white;
+}
+
+.link_footer {
+    display: block;
+}
+
+.link_footer ul {
+    list-style-type: none;
+}
+
+.link_footer ul li {
+    padding: 20px;
+}
+
+.link_footer ul a {
+    text-decoration: none;
+    color: #3e3e3e;
+    font-family: 'Montserrat',sans-serif;
     font-size: 19px;
-    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: .3s;
+    border-left: 5px solid rgb(255, 0, 0);
+}
+
+.link_footer ul a:hover {
+    background-color: white;
+    color: black;
+    border-left: 5px solid rgb(255, 140, 0);
 }
