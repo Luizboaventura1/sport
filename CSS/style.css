@@ -188,7 +188,7 @@ header {
 /* Produtos */
 
 
-.produtos {
+.produtos,.produtos_loja {
     text-align: center;
     padding: 35px 30px;
 }
