@@ -73,4 +73,8 @@
         background-color: rgb(38, 38, 49);
     }
 
+    #menu_mobile {
+        display: none;
+    }
+
 }

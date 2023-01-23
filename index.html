@@ -35,7 +35,9 @@
                 </div>
                 <div class="login">
                     <a href="login/login.html" class="btn_fazer_login">Login</a>
-                    <a href="login/conta-user.html"><img src="images/img-login.png" alt="Imagem login" class="conta_user"></a>
+                    <a href="login/conta-user.html">
+                        <img src="images/img-login.png" alt="Imagem login" class="conta_user">
+                    </a>
                 </div>
                 <div class="menu_burguer">
                     <svg id="menu_open" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
@@ -52,8 +54,10 @@
                 </li>
                 <li>
                     <a href="login/login.html" class="btn_fazer_login">Login</a>
-                    <div class="btn_menu_img" class="conta_user">
-                        <img src="images/img-login.png" alt="Imagem login">
+                    <div class="btn_menu_img conta_user">
+                        <a href="login/conta-user.html">
+                            <img src="images/img-login.png" alt="Imagem login">
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -106,10 +110,11 @@
         <div class="footer_wraper">
             <div class="box_footer">
                 <form class="form_login">
+                    <h1>Welcome</h1>
                     <input required type="email" id="gmailId" placeholder="Gmail">
                     <input required type="password" id="senhaId" placeholder="Senha">
                     <input required type="submit" id="button_logar" value="Login">
-                    <p>Não tem uma conta?<a href="#">Fazer cadastro</a></p>
+                    <p>Não tem uma conta?<a href="login/cadastro.html">Fazer cadastro</a></p>
                 </form>
             </div>
             <div class="box_footer">

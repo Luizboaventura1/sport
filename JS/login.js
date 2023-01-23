@@ -9,6 +9,10 @@ $(function(){
         $('.conta_user').css('display','block')
         $('.form_login').remove()
         $('.linkconta_login').remove()
+
+        $('.info_gmail').text(`${localStorage.getItem('gmailUser')}`)
+    }else {
+        $('.conta_user').css('display','none')
     }
 
     $('#button_logar').click(function(e){
@@ -34,6 +38,7 @@ $(function(){
             $('.conta_user').css('display','block')
             $('.form_login').remove()
             $('.linkconta_login').remove()
+            localStorage.setItem('gmailUser',gmailInput)
             location.href = '../index.html'
             tokenConta = 'Contaon'
             localStorage.setItem('tokenConta',tokenConta)
@@ -45,5 +50,40 @@ $(function(){
             alert('Login incorreto')
         }
         
+    })
+
+    $('#button_cadastro').click(function(e){
+        e.preventDefault()
+
+        let gmailCadastro = $('#gmailId_cadastro').val()
+        let senhaCadastro = $('#senhaId_cadastro').val()
+        
+        let gmailLista = listaLogin.find(function(usergmail){
+            return usergmail === gmailCadastro
+        })
+        let senhaLista = listaLogin.find(function(usersenha){
+            return usersenha === senhaCadastro
+        })
+
+        if(gmailLista == gmailCadastro && senhaLista == senhaCadastro) {
+            alert('Essa conta já existe')
+        }else {
+            listaLogin.push(gmailCadastro)
+            listaLogin.push(senhaCadastro)
+            localStorage.setItem('lista',JSON.stringify(listaLogin))
+            console.log('Conta criada')
+            tokenConta = 'Contaon'
+            localStorage.setItem('tokenConta',tokenConta)
+            localStorage.setItem('gmailUser',gmailCadastro)
+            location.href = '../index.html'
+        }
+    })
+
+    // Sair da conta
+
+    $('#button_sair_conta').click(function(){
+        localStorage.setItem('tokenConta','')
+        $('.conta_user').css('display','none')
+        location.href = '../index.html'
     })
 })
