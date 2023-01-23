@@ -14,4 +14,8 @@ $(function(){
             close.fadeOut().css('display','none')
         }
     })
+
+    $('.button_loja').click(function(){
+        location.href = 'loja/loja.html'
+    })
 })

@@ -34,11 +34,11 @@ lojaOn = () => {
     produtosLoja.map((value)=> {
         produtosMostrar.append(`
         <div class="container_produto_single" id="${value.id}">
-            <img src="images/${value.img}" alt="Img produto">
+            <img src="../images/${value.img}" alt="Img produto">
             <h1>${value.nome}</h1>
             <p>R$ ${value.preco.toFixed(2).replace('.',',')}</p>
             <div class="avaliacao_produto">
-                <img src="images/img-5-estrelas.png" alt="Img estrela">
+                <img src="../images/img-5-estrelas.png" alt="Img estrela">
             </div>
         </div>`)
     })
